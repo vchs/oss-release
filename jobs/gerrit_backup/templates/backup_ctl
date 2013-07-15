@@ -25,8 +25,8 @@ case $1 in
     chown -R vcap:vcap /home/vcap/.ssh
 
     # Refresh host key for cloudfoundry
-    su - vcap -c 'ssh-keygen -f /home/vcap/.ssh/known_hosts  -R reviews.cloudfoundry.org'
-    su - vcap -c 'ssh-keyscan reviews.cloudfoundry.org >> /home/vcap/.ssh/known_hosts'
+    su - vcap -c 'ssh-keygen -f /home/vcap/.ssh/known_hosts  -R reviews.sin2.beefstall.info'
+    su - vcap -c 'ssh-keyscan reviews.sin2.beefstall.info >> /home/vcap/.ssh/known_hosts'
 
     su - vcap -c "$JOB_DIR/bin/run_backup"
     ;;

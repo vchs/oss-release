@@ -20,7 +20,7 @@
               <default>
                 <comparator class="hudson.util.CaseInsensitiveComparator"/>
               </default>
-              <int>39</int>
+              <int>41</int>
               <string>CREATE_CONTAINER</string>
               <string>/var/vcap/jobs/jenkins_slave/bin/create_container</string>
               <string>DEA_JAVA</string>
@@ -83,6 +83,8 @@
               <string>/var/vcap/packages/redis26</string>
               <string>VCAP_RUBY19</string>
               <string>/var/vcap/packages/ruby</string>
+              <string>VCAP_RUBY193</string>
+              <string>/var/vcap/packages/ruby_next</string>
               <string>VCAP_SERVICES_CTL_JOB</string>
               <string>/var/vcap/packages/services_jobs</string>
               <string>VCAP_SERVICES_WARDEN</string>
@@ -100,6 +102,8 @@ bs
               <string>/var/vcap/packages/warden/warden/bin/warden-repl</string>
               <string>WARDEN_REPL_V2</string>
               <string>/var/vcap/packages/warden/warden/bin/warden</string>
+              <string>LIBYAML</string>
+              <string>/var/vcap/packages/libyaml</string>
             </tree-map>
           </envVars>
         </hudson.slaves.EnvironmentVariablesNodeProperty>

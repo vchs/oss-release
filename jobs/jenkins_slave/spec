@@ -25,7 +25,9 @@ packages:
   - git
   - warden
   - ruby
+  - ruby_next
   - libpq
+  - libyaml
   - maven22
   - memcached
   - mysqlclient
