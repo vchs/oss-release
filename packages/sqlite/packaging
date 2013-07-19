@@ -1,10 +1,10 @@
 # abort script on any command that exit with a non zero value
 set -e
 
-tar xzf sqlite/sqlite-autoconf-3070500.tar.gz
+tar xzf sqlite/sqlite-autoconf-3071700.tar.gz
 
 (
-  cd sqlite-autoconf-3070500
+  cd sqlite-autoconf-3071700
   ./configure --prefix=$BOSH_INSTALL_TARGET
   make
   make install
