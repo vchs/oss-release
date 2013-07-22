@@ -4,7 +4,7 @@ DATA_DIR=/var/vcap/store/jenkins
 LOG_DIR=/var/vcap/store/log
 BACKUP_LOG=jenkins_backup.log
 TERMINATE_BACKUP=/tmp/terminate_backup
-MONIT_FILE=/var/vcap/jobs/jenkins/jenkins.monitrc
+MONIT_FILE=/var/vcap/jobs/jenkins/jenkins.jenkins.monitrc
 
 log() {
   timenow=`date "+%Y-%m-%d %H:%M:%S"`
