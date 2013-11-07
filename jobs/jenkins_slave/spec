@@ -11,6 +11,7 @@ templates:
   id_rsa.erb: config/id_rsa
   id_rsa.pub.erb: config/id_rsa.pub
   authorized_keys.erb: config/authorized_keys
+  netrc.erb: config/netrc
 packages:
   - java
   - ovftool

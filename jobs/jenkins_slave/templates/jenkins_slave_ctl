@@ -32,6 +32,9 @@ case $1 in
     chown -R vcap:vcap /home/vcap/.ssh
     chown -R vcap:vcap /var/vcap/packages/elasticsearch/*
 
+    # link ~/.netrc for github http access
+    ln -fs $CONFIG_DIR/netrc /home/vcap/.netrc
+
     # Refresh host key for gerrit
     <% if properties.gerrit.dev_ip %>
     su - vcap -c 'ssh-keygen -f /home/vcap/.ssh/known_hosts -R <%= properties.gerrit.dev_ip %>'

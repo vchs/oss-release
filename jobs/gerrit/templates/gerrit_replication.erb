@@ -1,7 +1,11 @@
+<%
+replication = properties.gerrit.github_replication
+github_user, github_password, organization = %w{user password organization}.each {|k| replication.send(k.to_sym)}
+%>
 [remote "backup"]
   url = vcap@<%= properties.gerrit_replication.address %>:/var/vcap/store/gerrit_replication/${name}.git
 <% if properties.gerrit.github_replication %>
 [remote "github"]
-  url = <%= properties.gerrit.github_replication %>/${name}.git
+  url = https://"<%= github_user %>":"<%= github_password %>"@github.com/<%= organization %>/${name}.git
 <% end %>
 

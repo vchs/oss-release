@@ -1,0 +1,5 @@
+<%
+replication = properties.gerrit.github_replication
+github_user, github_password = %w{user password}.each {|k| replication.send(k.to_sym)}
+%>
+machine github.com login <%= github_user %> password <%= github_passwd %>
